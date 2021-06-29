@@ -1,0 +1,318 @@
+html {
+    font-family: "Roboto Slab";
+    color: #26487A;
+}
+header {
+    color: #9E5993;
+    font-family: "Viaoda Libre";
+}
+.header-bar {
+    position: fixed;
+    width: 100%;
+    background-color: #26487A;
+    display: inline-flex;
+    height: 85px;
+    align-items: center;
+    /* min-width: 900px; */
+    justify-content: space-between;
+    z-index: 200;
+    padding:0 5px;
+
+
+}
+.links ul{
+    display: inline-flex;
+    align-items: center;
+    line-height: 1.6;
+    font-size: 20px;
+    margin-right: 10px;
+}
+.links li {
+    padding: 0 1.5rem;
+    list-style-type: none;
+}
+.word-link a {
+    text-decoration: none;
+}
+.word-link a:hover {
+    color: #FFCA6E !important;
+}
+.word-link a:visited {
+    color: #9E5993;
+    text-decoration: none;
+
+}
+
+/* .link, .header-bar {
+    align-items: center;
+} */
+
+.link{
+    padding: .1875rem .5rem;
+    line-height: 1.6;
+    /* display: inline-flex; */
+    width: 20px;
+}
+
+#backsplash {
+    width: 100%;
+    /* display: none; */
+    background-image: url("images/sunset_clouds__15__by_duzulek_dbld77i-fullview.png");
+    background-size: cover;
+    height: 40rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#backsplash h1 {
+    font-family: "Dark Magic", "Viaoda Libre", monospace;
+    color: #26487A;
+    line-height:1.6;
+    font-size: 100px;
+    background-color: hsla(38, 100%, 72%, 0.529);
+    width: 100%;
+    text-align: center;
+    /* opacity: 0.5 */
+
+}
+
+.greeting {
+    text-align: center;
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    padding: 4rem 3rem 2.5rem 3rem;
+    margin: 0 2rem;
+    flex-direction: column;
+    right: 2%;
+}
+.greeting h1 {
+    font-size: 40px;
+    font-family: "Viaoda Libre";
+    /* color: #e8b865; */
+    /* font-weight: bold; */
+}
+.greeting h3 {
+    font-weight: normal;
+    /* font-size: 1.50rem; */
+    color: #e8b865;
+    font-family: "Roboto Slab";
+    line-height: 1.25;
+    text-align: center;
+    margin-top: 0;
+    /* text-align: left; */
+    /* padding-bottom: .5rem; */
+}
+#sign-up-section {
+    background-color: #FFCA6E;
+    text-align: center;
+    /* height: 100px; */
+    position: relative;
+    padding: 0 3rem 2.5rem 3rem;
+    border-radius: 4px;
+    border: 1px solid #26487A;
+    top: 80px;
+    right: 5%;
+    background-position: bottom;
+    height: 25.5rem;
+}
+#sign-up-cta .content {
+    width: 25.625rem;
+    margin-top: 2rem;
+    font-family: "Viaoda Libre";
+    font-size: 1.25rem;
+    line-height: 1.4;
+}
+#sign-up-cta h2 {
+    font-size: 2.25rem;
+}
+#sign-up-cta span strong {
+    font-weight: bold;
+}
+#sign-up-cta span {
+    font-family: "Roboto Slab";
+    font-size: medium;
+}
+
+#sign-up-cta .cursive {
+    font-family: "Damion", cursive;
+}
+#sign-up-cta .striking {
+    font-size: 3.125rem;
+    /* font-family: "Rubik", sans-serif; */
+    padding-bottom: .75rem;
+    line-height: 1.4;
+}
+
+#sign-up-cta .button {
+    margin-top: 1.625rem;
+    padding: 1.25rem 7.25rem;
+    font-size: 1.25rem;
+}
+.button {
+    border-radius: 9px;
+    background-color: #26487A;
+    color: white;
+}
+@media only screen and (max-width: 760px) {
+    #sign-up-section {
+        /* align-items: center;
+        justify-content: center;
+        height: 28rem;
+        background-color: transparent; */
+        display: none;
+    }
+    .main-content {
+        background-color: #FFCA6E !important;
+    }
+    .greeting h3 {
+        color: #26487a
+    }
+
+    #sign-up-cta {
+        /* position: static;
+        width: auto;
+        height: auto;
+        background-color: transparent; */
+        border: none;
+    }
+    .header-logo{
+        height: 80%
+    }
+
+    .header-bar {
+        /* justify-content:space-between; */
+        height: 50px;
+        min-width: 100%;
+        justify-content: center;
+
+    }
+    .link{
+        padding: 2rem;
+        width: 20px;
+        height: 20px;
+    }
+    .word-link {
+        display: none;
+    }
+
+    #sign-up-cta .email {
+        display: none;
+    }
+
+    #sign-up-cta h1 {
+        font-size: 3.125rem;
+    }
+
+    #sign-up-cta h2 {
+        font-size: 2.25rem;
+    }
+    .sample-photo img{
+        display: none;
+    }
+    .download {
+        justify-content: center;
+    }
+    .download h2 {
+        font-size: 40px;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    #sign-up-section {
+        height: 20rem;
+    }
+
+    #sign-up-cta h1 {
+        font-size: 2.25rem;
+    }
+
+    #sign-up-cta h2 {
+        font-size: 2rem;
+    }
+}
+@media only screen and (min-width: 1300px) {
+    .greeting h1 {
+        font-size: 80px;
+    }
+    .greeting {
+        justify-content: center;
+    }
+    .greeting h3 {
+        font-size: 30px;
+        font-family: "open sans condensed";
+    }
+}
+
+
+.main-content {
+    position: relative;
+    /* top: 5.3125rem; */
+    background-color: #9E5993;
+    display: flex;
+    height: 40.5rem;
+    /* align-items: baseline; */
+}
+.download {
+    background-color: #56A7BF;
+    text-align: center;
+    align-content: center;
+    /* height: 700px; */
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+.sample-photo img{
+    height: 550px;
+}
+.coming-soon {
+    /* display: flex; */
+    padding: 2rem 3rem 2.5rem 3rem;
+    justify-content: center;
+    align-content: center;
+    line-height: 1.6;
+}
+.coming-soon p {
+    color: #FFCA6E;
+    font-size: 16px;
+}
+.coming-soon h3 {
+    /* color: #FFCA6E; */
+    font-size: 30px;
+}
+.download h2 {
+    font-size: 40px;
+    font-family: "Viaoda Libre";
+}
+
+.download-button {
+    width: 100px;
+
+}
+
+/* .main {
+    /* background-color: #
+}*/
+footer {
+    background-color: #FFCA6E;
+    padding: 1.5rem 2rem;
+    color: #26487A;
+    display: flex;
+    font-size: 12px;
+    font-family: "Roboto", "Helvetica Neue",;
+}
+
+footer .content {
+    font-size: .75rem;
+}
+
+footer .copyright {
+    flex-grow: 1;
+    color: #9E5993;
+}
+
+@media only screen and (min-width: 760px) {
+    footer {
+        font-size: .625rem;
+    }
+}
