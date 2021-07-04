@@ -1,2 +1,3 @@
 # tarot-2-go-landing
-[Tarot 2 Go.pdf](https://github.com/St-Ives94/tarot-2-go-landing/files/6759499/Tarot.2.Go.pdf)
+![sample-picture](https://user-images.githubusercontent.com/74171521/124376085-df8aed00-dc6a-11eb-9ab2-478f0e20c28b.jpg)
+
