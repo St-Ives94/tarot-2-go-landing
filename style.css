@@ -42,6 +42,9 @@ header {
     text-decoration: none;
 
 }
+.fab {
+    color: #FFCA6E;
+}
 
 /* .link, .header-bar {
     align-items: center;
