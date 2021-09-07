@@ -1,3 +1,23 @@
+@keyframes transitionIn {
+    from {
+        opacity: 0;
+        transform: rotateX(-10deg);
+    }
+    to {
+        opacity: 1;
+        transform: rotateY(0);
+    }
+}
+/* @keyframes wipe-enter {
+	0% {
+		transform: scale(0, .025);
+	}
+	50% {
+		transform: scale(1, .025);
+	}
+} */
+
+
 * {
     font-family: "Roboto Slab";
     color: #26487A;
@@ -6,7 +26,7 @@
 }
 header {
     color: #9E5993;
-    font-family: "Viaoda Libre";
+    font-family: "Open Sans Condensed";
 }
 .header-bar {
     position: fixed;
@@ -15,7 +35,6 @@ header {
     display: inline-flex;
     height: 85px;
     align-items: center;
-    /* min-width: 900px; */
     justify-content: space-between;
     z-index: 200;
     padding:0 5px;
@@ -74,17 +93,7 @@ header {
     width: 100%;
     text-align: center;
     font-weight: normal;
-    animation: headerTop  5s ease ;
-}
-@keyframes headerTop {
-    from {
-        opacity: 0;
-        transform: rotateX(-10deg);
-    }
-    to {
-        opacity: 1;
-        transform: rotateY(0);
-    }
+    animation: transitionIn  2s ease ;
 }
 
 
@@ -101,12 +110,9 @@ header {
 .greeting h1 {
     font-size: 40px;
     font-family: "Viaoda Libre";
-    /* color: #e8b865; */
-    /* font-weight: bold; */
 }
 .greeting h3 {
     font-weight: normal;
-    /* font-size: 1.50rem; */
     color: #e8b865;
     font-family: "Roboto Slab";
     line-height: 1.25;
@@ -159,17 +165,17 @@ header {
     padding: 1.25rem 7.25rem;
     font-size: 1.25rem;
 }
-.button {
+
+.button  {
     border-radius: 9px;
     background-color: #26487A;
+}
+.button a {
     color: white;
+    font-family: "Open Sans Condensed";
 }
 @media only screen and (max-width: 760px) {
     #sign-up-section {
-        /* align-items: center;
-        justify-content: center;
-        height: 28rem;
-        background-color: transparent; */
         display: none;
     }
     .main-content {
@@ -180,10 +186,6 @@ header {
     }
 
     #sign-up-cta {
-        /* position: static;
-        width: auto;
-        height: auto;
-        background-color: transparent; */
         border: none;
     }
     .header-logo{
@@ -191,7 +193,6 @@ header {
     }
 
     .header-bar {
-        /* justify-content:space-between; */
         height: 50px;
         min-width: 100%;
         justify-content: center;
@@ -291,8 +292,11 @@ header {
 }
 
 .download-button {
-    width: 100px;
+    width: 150px;
 
+}
+.google {
+    width: 150px;
 }
 
 footer {
