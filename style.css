@@ -1,6 +1,8 @@
-html {
+* {
     font-family: "Roboto Slab";
     color: #26487A;
+    margin: 0;
+    padding: 0;
 }
 header {
     color: #9E5993;
@@ -33,6 +35,7 @@ header {
 }
 .word-link a {
     text-decoration: none;
+    color: #9E5993;
 }
 .word-link a:hover {
     color: #FFCA6E !important;
@@ -46,20 +49,15 @@ header {
     color: #FFCA6E;
 }
 
-/* .link, .header-bar {
-    align-items: center;
-} */
 
 .link{
     padding: .1875rem .5rem;
     line-height: 1.6;
-    /* display: inline-flex; */
     width: 20px;
 }
 
 #backsplash {
     width: 100%;
-    /* display: none; */
     background-image: url("images/sunset_clouds__15__by_duzulek_dbld77i-fullview.png");
     background-size: cover;
     height: 40rem;
@@ -67,7 +65,7 @@ header {
     justify-content: center;
     align-items: center;
 }
-#backsplash h1 {
+#title {
     font-family: "Dark Magic", "Viaoda Libre", monospace;
     color: #26487A;
     line-height:1.6;
@@ -76,9 +74,19 @@ header {
     width: 100%;
     text-align: center;
     font-weight: normal;
-    /* opacity: 0.5 */
-
+    animation: headerTop  5s ease ;
 }
+@keyframes headerTop {
+    from {
+        opacity: 0;
+        transform: rotateX(-10deg);
+    }
+    to {
+        opacity: 1;
+        transform: rotateY(0);
+    }
+}
+
 
 .greeting {
     text-align: center;
@@ -104,13 +112,11 @@ header {
     line-height: 1.25;
     text-align: center;
     margin-top: 0;
-    /* text-align: left; */
-    /* padding-bottom: .5rem; */
 }
+
 #sign-up-section {
     background-color: #FFCA6E;
     text-align: center;
-    /* height: 100px; */
     position: relative;
     padding: 0 3rem 2.5rem 3rem;
     border-radius: 4px;
@@ -143,7 +149,7 @@ header {
 }
 #sign-up-cta .striking {
     font-size: 3.125rem;
-    /* font-family: "Rubik", sans-serif; */
+    font-family: "Viaoda Libre", sans-serif;
     padding-bottom: .75rem;
     line-height: 1.4;
 }
@@ -251,17 +257,14 @@ header {
 
 .main-content {
     position: relative;
-    /* top: 5.3125rem; */
     background-color: #9E5993;
     display: flex;
     height: 40.5rem;
-    /* align-items: baseline; */
 }
 .download {
     background-color: #56A7BF;
     text-align: center;
     align-content: center;
-    /* height: 700px; */
     position: relative;
     display: flex;
     justify-content: center;
@@ -270,7 +273,6 @@ header {
     height: 550px;
 }
 .coming-soon {
-    /* display: flex; */
     padding: 2rem 3rem 2.5rem 3rem;
     justify-content: center;
     align-content: center;
@@ -281,7 +283,6 @@ header {
     font-size: 16px;
 }
 .coming-soon h3 {
-    /* color: #FFCA6E; */
     font-size: 30px;
 }
 .download h2 {
@@ -294,9 +295,6 @@ header {
 
 }
 
-/* .main {
-    /* background-color: #
-}*/
 footer {
     background-color: #FFCA6E;
     padding: 1.5rem 2rem;
